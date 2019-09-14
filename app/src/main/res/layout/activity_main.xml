@@ -1,14 +1,146 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:opencv="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <org.opencv.android.JavaCameraView
+        android:id="@+id/cameraView"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:visibility="gone"
-        android:id="@+id/cameraView"
-        opencv:camera_id="any" />
+        app:layout_constraintRight_toRightOf="parent"
+        opencv:camera_id="any"
+        opencv:layout_constraintBottom_toBottomOf="parent"
+        opencv:layout_constraintStart_toStartOf="parent"
+        opencv:layout_constraintTop_toTopOf="parent" />
 
-</FrameLayout>
+    <ImageView
+        android:id="@+id/signNotification"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@mipmap/ic_launcher"
+        opencv:layout_constraintBottom_toBottomOf="parent"
+        opencv:layout_constraintEnd_toEndOf="parent"
+        opencv:layout_constraintStart_toStartOf="parent"
+        opencv:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/animatedImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:onClick="startAnimation"
+        android:text="ANIMATION"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="50dp"
+        opencv:layout_constraintBottom_toBottomOf="parent"
+        opencv:layout_constraintEnd_toEndOf="parent"
+        opencv:layout_constraintStart_toStartOf="parent"
+        opencv:layout_constraintTop_toTopOf="parent"
+        android:visibility="invisible"/>
+
+    <LinearLayout
+        android:layout_marginStart="20dp"
+        android:id="@+id/linearLayout2"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        opencv:layout_constraintBottom_toBottomOf="parent"
+        opencv:layout_constraintStart_toStartOf="parent"
+        opencv:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Im text?"
+            android:textColor="@color/colorAccent"
+            android:textSize="20dp"
+            android:visibility="gone" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/callButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_phone"
+            android:layout_gravity="center"
+            android:layout_weight="30"
+            android:onClick="onClick"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/settingsButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_settings"
+            android:layout_gravity="center"
+            android:layout_weight="30"
+            android:onClick="onClick"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/infoButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_info"
+            android:layout_gravity="center"
+            android:layout_weight="30"
+            android:onClick="onClick"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginEnd="20dp"
+        opencv:layout_constraintBottom_toBottomOf="parent"
+        opencv:layout_constraintEnd_toEndOf="parent"
+        opencv:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="im text?"
+            android:textColor="@color/colorAccent"
+            android:textSize="20dp"
+            android:visibility="gone" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/recordingPauseStartButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_recording"
+            android:layout_gravity="center"
+            android:layout_weight="30"
+            android:onClick="onClick"
+            />
+
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/ic_menu_camera"
+        android:onClick="swapCamera"
+        opencv:layout_constraintStart_toStartOf="parent"
+        opencv:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

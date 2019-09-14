@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.InfoActivity"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="ПДД:ШТРАФЫ"
+        android:textColor="@android:color/black"
+        android:textSize="50sp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/button1"
+                    android:background="@drawable/corners"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:text="Правила пользования транспортным средством"
+                    android:layout_weight="50"
+                    android:onClick="onClick"
+                    android:layout_margin="10dp"/>
+
+                <Button
+                    android:id="@+id/button2"
+                    android:background="@drawable/corners"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:text="Правила эксплуатации транспортного средства"
+                    android:layout_weight="50"
+                    android:onClick="onClick"
+                    android:layout_margin="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <Button
+                    android:id="@+id/button3"
+                    android:background="@drawable/corners"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:text="Превышение скорости движения"
+                    android:layout_weight="50"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:layout_margin="10dp"/>
+
+                <Button
+                    android:id="@+id/button4"
+                    android:background="@drawable/corners"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:text="Сигналы регулир. дорожн. движения, перевозка пассажиров и друг."
+                    android:layout_weight="50"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:layout_margin="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+                <Button
+                    android:id="@+id/button5"
+                    android:background="@drawable/corners"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:text="Управление транспортным средством в состоянии алкогольного опьянения"
+                    android:layout_weight="50"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:layout_margin="10dp"/>
+
+                <Button
+                    android:id="@+id/button6"
+                    android:background="@drawable/corners"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:text="Проезд железнодорожного переезда"
+                    android:layout_weight="50"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:layout_margin="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+                <Button
+                    android:id="@+id/button7"
+                    android:background="@drawable/corners"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:text="Дорожно-транспортное происшествие"
+                    android:layout_weight="50"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:layout_margin="10dp"/>
+
+                <Button
+                    android:id="@+id/button8"
+                    android:background="@drawable/corners"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:text="Управление транспортным средством без соответствующих документов"
+                    android:layout_weight="50"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:layout_margin="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+                <Button
+                    android:id="@+id/button9"
+                    android:background="@drawable/corners"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:text="Управление транспортным средством без права управления"
+                    android:layout_weight="50"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:layout_margin="10dp"/>
+
+                <Button
+                    android:id="@+id/button10"
+                    android:background="@drawable/corners"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:text="Эксплуатация транспортного средства без договора страхования"
+                    android:layout_weight="50"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:layout_margin="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+                <Button
+                    android:id="@+id/button11"
+                    android:background="@drawable/corners"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:text="Невыполнение требования об остановке транспортного средства"
+                    android:layout_weight="50"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:layout_margin="10dp"/>
+
+                <Button
+                    android:id="@+id/button12"
+                    android:background="@drawable/corners"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:text="Правила остановки и стоянки транспортного средства"
+                    android:layout_weight="50"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:layout_margin="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+                <Button
+                    android:id="@+id/button13"
+                    android:background="@drawable/corners"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:text="Пешеходы и иные участники дорожного движения"
+                    android:layout_weight="50"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:layout_margin="10dp"/>
+
+                <Button
+                    android:id="@+id/button14"
+                    android:background="@drawable/corners"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:text="Допуск к участию в дорожном движении"
+                    android:layout_weight="50"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:layout_margin="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+                <Button
+                    android:id="@+id/button15"
+                    android:background="@drawable/corners"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:text="Допуск к управлению транспортным средством в состоянии опьянения"
+                    android:layout_weight="50"
+                    android:gravity="center"
+
+                    android:onClick="onClick"
+                    android:layout_margin="10dp"/>
+
+                <Button
+                    android:id="@+id/button16"
+                    android:background="@drawable/corners"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:text="Режим труда и отдыха"
+                    android:layout_weight="50"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:layout_margin="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+                <Button
+                    android:id="@+id/button17"
+                    android:background="@drawable/corners"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:text="Ограничение прав на управление и пользование транспортным средством"
+                    android:layout_weight="50"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:layout_margin="10dp"/>
+
+                <Button
+                    android:id="@+id/button18"
+                    android:background="@drawable/corners"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:text="Перевозка опасных грузов и опасных веществ"
+                    android:layout_weight="50"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:layout_margin="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+                <Button
+                    android:id="@+id/button19"
+                    android:background="@drawable/corners"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:text="Повреждение либо загрязнение автомобильной дороги"
+                    android:layout_weight="50"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:layout_margin="10dp"/>
+
+                <Button
+                    android:id="@+id/button20"
+                    android:background="@drawable/corners"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:text="Проезд тяжеловесных и (или) крупногабаритных транспортных средств"
+                    android:layout_weight="50"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:layout_margin="10dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

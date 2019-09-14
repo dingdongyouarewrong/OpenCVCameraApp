@@ -1,4 +1,4 @@
-package com.kakatontest.opencvcameraapp;
+package com.gsu.opencvcameraapp;
 
 import org.junit.Test;
 
